@@ -1,7 +1,12 @@
 class profile::unset {
  case $::operatingsystem {
-   'Redhat': {
-
-	}
+   'RedHat': {
+		file { '/var/log/admin-app-log':
+			ensure => 'directory',
+			owner  => 'root',
+			group  => 'wheel',
+			mode   => '0750',
+			}
+		}
      }
   }
