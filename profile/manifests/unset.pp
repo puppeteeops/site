@@ -4,3 +4,4 @@ class profile::unset {
 		contain wildfly
      }
   }
+ }
