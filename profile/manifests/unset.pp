@@ -1,6 +1,6 @@
 class profile::unset {
  case $::operatingsystem {
-   'RedHat': {
+   'RedHat', 'CentOS': {
 		contain wildfly
      }
   }
